@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      TestimoDivScrolling
+    </title>
+    <style>
+      .container{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        scroll-behavior: smooth;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+      }
+      .container div{
+        
+        min-width: 100%;
+        height: 100%;
+        scroll-snap-align: center;
+      }
+      .container #pink{
+        background-color: pink;
+        text-align: center;
+      }
+      .container #blue{
+        background-color: blue;
+      }
+      .container #red{
+        background-color: red;
+      }
+      .container #green{
+        background-color: green;
+      }
+      .container #pink img{
+        border-radius: 50%;
+        box-shadow: 0 5px 5px gray;
+      
+      }
+      .ancher{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      .ancher ul{
+      position: fixed;
+      z-index: 1;
+      display: flex;
+      gap: 15px;
+      }
+      .ancher ul li{
+        list-style: none;
+      }
+      .ancher ul li a{
+        text-decoration: none;
+        color: gray;
+        font-size: 40px;
+      }
+      .ancher ul li a:hover{
+        background-color: black;
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="pink">
+        <img src="img3.jpg" width="80px" height="80px">
+        <h1>Pink color Heading</h1>
+      <p>
+While going to France, Wordsworth, accompanied by his sister Dorothy, on their way from London to Dover, stopped on the Westminster Bridge. It was the pristine hours of the morning. The city of London viewed from the Westminster Bridge looked amazing. It was a clear morning without any fog to obstruct the cityscape, from being visible in utmost clarity. The London city, bathed in the early morning sun, cast a spell on the poet. It appeared as if the city was a
+      </p>
+      </div>
+      <div id="blue"><h1>blue color heading</h1>
+      <p>
+        his sister Dorothy, on their way from London to Dover, stopped on the Westminster Bridge. It was the pristine hours of the morning. The city of London viewed from the Westminster Bridge looked amazing. It was a clear morning without any fog to obstruct the cityscape, from being visible in utmost clarity. The London city, bathed in the early morning sun, cast a spell on the poet. 
+      </p>
+      </div>
+      <div id="red"><h1>red color heading</h1>
+      <img src="tet1.png" width="100%" height="200px">
+      </div>
+      <div id="green"><h1>green color heading</h1>
+      </div>
+    </div>
+    
+    <div class="ancher">
+      <ul>
+      <li><a href="#pink">—</a></li>
+      <li><a href="#blue">—</a></li>
+      <li><a href="#red">—</a></li>
+      <li><a href="#green">—</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
